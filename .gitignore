@@ -1,0 +1,29 @@
+# Build output (covers AccOverlay/ and Watcher/ at any depth)
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test / coverage results
+TestResults/
+*.coverage
+*.coveragexml
+coverage*.xml
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# Project-specific runtime telemetry (generated via --dump / --diag / recordings/)
+recordings/
+diag.csv
+udp.csv

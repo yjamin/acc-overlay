@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GameOverlay.Net" Version="4.3.1" />
+  </ItemGroup>
+
+  <!-- Autostart watcher: separate windowless exe, built into the same output folder. -->
+  <ItemGroup>
+    <Compile Remove="Watcher\**" />
+    <None Remove="Watcher\**" />
+    <ProjectReference Include="Watcher\AccOverlayWatcher.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+</Project>
